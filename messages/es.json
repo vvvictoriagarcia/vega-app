@@ -41,7 +41,8 @@
     "defaultAvatar": "Avatar",
     "menuProfile": "Perfil",
     "menuSettings": "Configuración",
-    "menuSignOut": "Cerrar sesión"
+    "menuSignOut": "Cerrar sesión",
+    "adminClients": "Clientes (admin)"
   },
   "Header": {
     "dashboard": "Panel",
@@ -2047,7 +2048,10 @@
     "creating": "Creando cuenta...",
     "submit": "Crear cuenta",
     "haveAccount": "¿Ya tienes una cuenta?",
-    "signIn": "Iniciar sesión"
+    "signIn": "Iniciar sesión",
+    "inviteOnlyTitle": "Solo con invitación",
+    "inviteOnlyDesc": "Las cuentas las crea Vega para cada negocio. Si te invitaron a un equipo, abrí el link de invitación que te llegó.",
+    "inviteOnlyError": "Esta invitación ya no es válida. Pedile un link nuevo a quien te invitó."
   },
   "ForgotPasswordPage": {
     "checkEmailTitle": "Revisa tu correo",
@@ -2715,5 +2719,36 @@
       "metaApiStatus": "Error de la API de Meta: {status}",
       "syncFailed": "Error al sincronizar las plantillas"
     }
+  },
+  "AdminPage": {
+    "title": "Clientes",
+    "subtitle": "Todos los negocios que usan Vega. Solo las administradoras de la plataforma ven esta página.",
+    "newClientTitle": "Nuevo cliente",
+    "newClientDesc": "Le mandamos al dueño un mail para que cree su contraseña. Su cuenta se crea con el nombre del negocio.",
+    "businessNameLabel": "Nombre del negocio",
+    "businessNamePlaceholder": "Ej.: Inmobiliaria del Centro",
+    "ownerEmailLabel": "Mail del dueño",
+    "ownerEmailPlaceholder": "duenio@negocio.com",
+    "submit": "Crear y mandar invitación",
+    "sending": "Enviando…",
+    "passwordNote": "Nunca ves ni elegís su contraseña.",
+    "invited": "Invitación enviada a {email}",
+    "errorBusinessName": "Escribí el nombre del negocio (entre 2 y 120 caracteres).",
+    "errorOwnerEmail": "Escribí un mail válido.",
+    "errorAlreadyRegistered": "Ese mail ya tiene una cuenta.",
+    "errorGeneric": "No se pudo mandar la invitación. Probá de nuevo.",
+    "clientsTitle": "Clientes",
+    "empty": "Todavía no hay clientes. Creá el primero arriba.",
+    "colBusiness": "Negocio",
+    "colOwner": "Dueño",
+    "colMembers": "Usuarios",
+    "colWhatsapp": "WhatsApp",
+    "colCreated": "Alta",
+    "whatsapp_connected": "Conectado",
+    "whatsapp_disconnected": "Desconectado",
+    "whatsapp_none": "Sin conectar",
+    "loadFailed": "No se pudieron cargar los clientes.",
+    "loading": "Cargando",
+    "notFound": "Esta página no existe."
   }
 }

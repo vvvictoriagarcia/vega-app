@@ -41,7 +41,8 @@
     "defaultAvatar": "아바타",
     "menuProfile": "프로필",
     "menuSettings": "설정",
-    "menuSignOut": "로그아웃"
+    "menuSignOut": "로그아웃",
+    "adminClients": "고객 (관리자)"
   },
   "Header": {
     "dashboard": "대시보드",
@@ -2047,7 +2048,10 @@
     "creating": "계정 만드는 중...",
     "submit": "계정 만들기",
     "haveAccount": "이미 계정이 있으신가요?",
-    "signIn": "로그인"
+    "signIn": "로그인",
+    "inviteOnlyTitle": "초대 전용",
+    "inviteOnlyDesc": "계정은 Vega가 각 비즈니스별로 생성합니다. 팀에 초대받았다면 받은 초대 링크를 여세요.",
+    "inviteOnlyError": "이 초대는 더 이상 유효하지 않습니다. 초대한 사람에게 새 링크를 요청하세요."
   },
   "ForgotPasswordPage": {
     "checkEmailTitle": "이메일을 확인하세요",
@@ -2715,5 +2719,36 @@
       "metaApiStatus": "Meta API 오류: {status}",
       "syncFailed": "템플릿을 동기화하지 못했습니다"
     }
+  },
+  "AdminPage": {
+    "title": "고객",
+    "subtitle": "Vega를 사용하는 모든 비즈니스입니다. 플랫폼 관리자만 이 페이지를 볼 수 있습니다.",
+    "newClientTitle": "새 고객",
+    "newClientDesc": "소유자에게 비밀번호를 설정하도록 초대 이메일을 보냅니다. 계정은 비즈니스 이름으로 생성됩니다.",
+    "businessNameLabel": "비즈니스 이름",
+    "businessNamePlaceholder": "예: 다운타운 부동산",
+    "ownerEmailLabel": "소유자 이메일",
+    "ownerEmailPlaceholder": "owner@business.com",
+    "submit": "생성하고 초대 보내기",
+    "sending": "보내는 중…",
+    "passwordNote": "비밀번호는 절대 보거나 정하지 않습니다.",
+    "invited": "{email}(으)로 초대를 보냈습니다",
+    "errorBusinessName": "비즈니스 이름을 입력하세요(2~120자).",
+    "errorOwnerEmail": "올바른 이메일을 입력하세요.",
+    "errorAlreadyRegistered": "이 이메일은 이미 계정이 있습니다.",
+    "errorGeneric": "초대를 보내지 못했습니다. 다시 시도하세요.",
+    "clientsTitle": "고객",
+    "empty": "아직 고객이 없습니다. 위에서 첫 고객을 만드세요.",
+    "colBusiness": "비즈니스",
+    "colOwner": "소유자",
+    "colMembers": "사용자",
+    "colWhatsapp": "WhatsApp",
+    "colCreated": "생성일",
+    "whatsapp_connected": "연결됨",
+    "whatsapp_disconnected": "연결 끊김",
+    "whatsapp_none": "미연결",
+    "loadFailed": "고객 목록을 불러오지 못했습니다.",
+    "loading": "불러오는 중",
+    "notFound": "이 페이지는 존재하지 않습니다."
   }
 }

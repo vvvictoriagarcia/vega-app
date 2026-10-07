@@ -41,7 +41,8 @@
     "defaultAvatar": "Avatar",
     "menuProfile": "Profile",
     "menuSettings": "Settings",
-    "menuSignOut": "Sign out"
+    "menuSignOut": "Sign out",
+    "adminClients": "Clients (admin)"
   },
   "Header": {
     "dashboard": "Dashboard",
@@ -2047,7 +2048,10 @@
     "creating": "Creating account...",
     "submit": "Create account",
     "haveAccount": "Already have an account?",
-    "signIn": "Sign in"
+    "signIn": "Sign in",
+    "inviteOnlyTitle": "Invitation only",
+    "inviteOnlyDesc": "Accounts are created by Vega for each business. If you were invited to a team, open the invitation link you received.",
+    "inviteOnlyError": "This invitation is no longer valid. Ask whoever invited you for a new link."
   },
   "ForgotPasswordPage": {
     "checkEmailTitle": "Check your email",
@@ -2715,5 +2719,36 @@
       "metaApiStatus": "Meta API error: {status}",
       "syncFailed": "Failed to sync templates"
     }
+  },
+  "AdminPage": {
+    "title": "Clients",
+    "subtitle": "Every business using Vega. Only platform admins see this page.",
+    "newClientTitle": "New client",
+    "newClientDesc": "We email the owner an invitation to set their password. Their account is created with the business name.",
+    "businessNameLabel": "Business name",
+    "businessNamePlaceholder": "e.g. Downtown Realty",
+    "ownerEmailLabel": "Owner's email",
+    "ownerEmailPlaceholder": "owner@business.com",
+    "submit": "Create and send invitation",
+    "sending": "Sending…",
+    "passwordNote": "You never see or choose their password.",
+    "invited": "Invitation sent to {email}",
+    "errorBusinessName": "Enter a business name (2 to 120 characters).",
+    "errorOwnerEmail": "Enter a valid email.",
+    "errorAlreadyRegistered": "That email already has an account.",
+    "errorGeneric": "Couldn't send the invitation. Try again.",
+    "clientsTitle": "Clients",
+    "empty": "No clients yet. Create the first one above.",
+    "colBusiness": "Business",
+    "colOwner": "Owner",
+    "colMembers": "Users",
+    "colWhatsapp": "WhatsApp",
+    "colCreated": "Created",
+    "whatsapp_connected": "Connected",
+    "whatsapp_disconnected": "Disconnected",
+    "whatsapp_none": "Not connected",
+    "loadFailed": "Couldn't load the clients.",
+    "loading": "Loading",
+    "notFound": "This page doesn't exist."
   }
 }

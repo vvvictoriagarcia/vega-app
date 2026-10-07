@@ -83,6 +83,9 @@ function SignupPageInner() {
       options: {
         data: {
           full_name: fullName,
+          // Vega: sign-up is invitation-only. The database checks this
+          // token against pending invitations (migration 047).
+          ...(inviteToken ? { invite_token: inviteToken } : {}),
         },
         emailRedirectTo,
       },
@@ -97,6 +100,35 @@ function SignupPageInner() {
     setSuccess(true);
     setLoading(false);
   };
+
+  // Vega: accounts are created by invitation only. Without an invite
+  // token there is nothing to sign up for — explain and send to login.
+  if (!inviteToken) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-background px-4">
+        <Card className="w-full max-w-md border-border bg-card">
+          <CardHeader className="items-center text-center">
+            <div className="mb-2 flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
+              <MessageSquare className="h-6 w-6 text-primary" />
+            </div>
+            <CardTitle className="text-xl text-foreground">
+              {t("inviteOnlyTitle")}
+            </CardTitle>
+            <CardDescription className="text-muted-foreground">
+              {t("inviteOnlyDesc")}
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <Link href="/login">
+              <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
+                {t("signIn")}
+              </Button>
+            </Link>
+          </CardContent>
+        </Card>
+      </div>
+    );
+  }
 
   if (success) {
     return (

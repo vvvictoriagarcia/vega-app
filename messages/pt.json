@@ -41,7 +41,8 @@
     "defaultAvatar": "Avatar",
     "menuProfile": "Perfil",
     "menuSettings": "Configurações",
-    "menuSignOut": "Sair"
+    "menuSignOut": "Sair",
+    "adminClients": "Clientes (admin)"
   },
   "Header": {
     "dashboard": "Painel",
@@ -2047,7 +2048,10 @@
     "creating": "Criando conta...",
     "submit": "Criar conta",
     "haveAccount": "Já tem uma conta?",
-    "signIn": "Entrar"
+    "signIn": "Entrar",
+    "inviteOnlyTitle": "Somente com convite",
+    "inviteOnlyDesc": "As contas são criadas pela Vega para cada empresa. Se você foi convidado para uma equipe, abra o link de convite que recebeu.",
+    "inviteOnlyError": "Este convite não é mais válido. Peça um novo link a quem convidou você."
   },
   "ForgotPasswordPage": {
     "checkEmailTitle": "Verifique seu e-mail",
@@ -2715,5 +2719,36 @@
       "metaApiStatus": "Erro da API da Meta: {status}",
       "syncFailed": "Falha ao sincronizar os modelos"
     }
+  },
+  "AdminPage": {
+    "title": "Clientes",
+    "subtitle": "Todas as empresas que usam a Vega. Só administradores da plataforma veem esta página.",
+    "newClientTitle": "Novo cliente",
+    "newClientDesc": "Enviamos ao dono um e-mail para criar a senha. A conta é criada com o nome da empresa.",
+    "businessNameLabel": "Nome da empresa",
+    "businessNamePlaceholder": "Ex.: Imobiliária Centro",
+    "ownerEmailLabel": "E-mail do dono",
+    "ownerEmailPlaceholder": "dono@empresa.com",
+    "submit": "Criar e enviar convite",
+    "sending": "Enviando…",
+    "passwordNote": "Você nunca vê nem escolhe a senha.",
+    "invited": "Convite enviado para {email}",
+    "errorBusinessName": "Digite o nome da empresa (de 2 a 120 caracteres).",
+    "errorOwnerEmail": "Digite um e-mail válido.",
+    "errorAlreadyRegistered": "Esse e-mail já tem uma conta.",
+    "errorGeneric": "Não foi possível enviar o convite. Tente novamente.",
+    "clientsTitle": "Clientes",
+    "empty": "Ainda não há clientes. Crie o primeiro acima.",
+    "colBusiness": "Empresa",
+    "colOwner": "Dono",
+    "colMembers": "Usuários",
+    "colWhatsapp": "WhatsApp",
+    "colCreated": "Criado",
+    "whatsapp_connected": "Conectado",
+    "whatsapp_disconnected": "Desconectado",
+    "whatsapp_none": "Não conectado",
+    "loadFailed": "Não foi possível carregar os clientes.",
+    "loading": "Carregando",
+    "notFound": "Esta página não existe."
   }
 }
